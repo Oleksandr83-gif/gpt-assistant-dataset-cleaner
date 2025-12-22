@@ -1,0 +1,24 @@
+# Example configuration for the GPT-only dataset cleaner
+# Пример конфигурации для клинера датасетов
+
+[gpt]
+# Default model name (can be overridden by GPT_MODEL env var)
+# Имя модели по умолчанию (можно переопределить переменной окружения GPT_MODEL)
+model = "gpt-4o-mini"
+
+[paths]
+# Input raw JSONL
+# Входной JSONL с сырыми данными
+input_file  = "mix_0015.jsonl"
+
+# Output cleaned assistant SFT JSONL
+# Выходной JSONL с очищенными примерами ассистента
+output_file = "assistant_sft_clean_mix0015.jsonl"
+
+# Log of rejected/problematic lines
+# Лог отклонённых / проблемных строк
+log_file    = "assistant_sft_rejected.jsonl"
+
+# State file for resume
+# Файл состояния для возобновления обработки
+state_file  = "assistant_sft_resume.json"

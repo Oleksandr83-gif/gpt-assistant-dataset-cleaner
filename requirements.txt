@@ -1,0 +1,8 @@
+# HTTP-клиент для работы с OpenAI / HTTP client for OpenAI API
+requests>=2.31.0
+
+# Прогресс-бар в консоли / Progress bar in terminal
+tqdm>=4.66.0
+
+# Загрузка переменных окружения из .env / Load env vars from .env
+python-dotenv>=1.0.0

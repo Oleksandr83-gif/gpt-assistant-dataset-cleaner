@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt-assistant-dataset-cleaner"
+version = "0.1.0"
+description = "GPT-powered dataset cleaner and reconstructor for multilingual assistant SFT."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+
+authors = [
+  { name = "Oleksandr Matvieiev" }
+]
+
+dependencies = [
+  "requests>=2.31.0",
+  "tqdm>=4.66.0",
+  "python-dotenv>=1.0.0"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+Homepage = "https://github.com/your-user/gpt-assistant-dataset-cleaner"
+Source = "https://github.com/your-user/gpt-assistant-dataset-cleaner"
+
+[project.scripts]
+gpt-dataset-cleaner = "clener_gpt_only_oss:main"
+
+[tool.setuptools]
+py-modules = ["clener_gpt_only_oss"]
