@@ -13,7 +13,7 @@ GPT-powered dataset cleaner and reconstructor for multilingual assistant SFT (ru
 ### Вариант 1: через `pip` (локальная разработка)
 
 ```bash
-git clone https://github.com/your-user/gpt-assistant-dataset-cleaner.git
+git clone https://github.com/Oleksandr83-gif/gpt-assistant-dataset-cleaner.git
 cd gpt-assistant-dataset-cleaner
 
 python -m venv .venv
@@ -43,7 +43,7 @@ pip install gpt-assistant-dataset-cleaner
 - `OPENAI_API_KEY` — ключ OpenAI (обязательно),
 - `GPT_MODEL` — имя модели (по умолчанию `gpt-4o-mini`).
 
-Пример `.env` есть в `.env.example`:
+Безопасный шаблон настроек находится в `.env.example`:
 
 ```bash
 cp .env.example .env
@@ -140,6 +140,9 @@ gpt-dataset-cleaner
 ```bash
 python clener_gpt_only_oss.py
 ```
+
+> Примечание: имя `clener_gpt_only_oss.py` сохранено для обратной совместимости с уже установленной CLI-командой. Переименование потребует отдельного релиза пакета.
+
 
 ## Лицензия
 
