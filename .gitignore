@@ -21,6 +21,7 @@ Thumbs.db
 # Env files
 .env
 .env.*
+!.env.example
 
 # Build artifacts
 build/
